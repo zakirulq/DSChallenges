@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class GreedySolution
+namespace Greedy
+{
+    public class GreedySolution
 {
     // Interval class for interval problems
     public class Interval
@@ -409,4 +411,5 @@ public class GreedySolution
         }
         Console.WriteLine("]");
     }
+}
 } 

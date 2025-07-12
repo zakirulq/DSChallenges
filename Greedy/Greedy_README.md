@@ -1,5 +1,7 @@
 # Greedy Algorithms and Interval Partitioning
 
+*This file is located in the `Greedy` directory and documents the Greedy pattern.*
+
 ## Problem Statement
 
 Greedy algorithms make locally optimal choices at each step with the hope of finding a global optimum. They are particularly useful for optimization problems where making the best choice at each step leads to the best overall solution.
