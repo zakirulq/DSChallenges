@@ -14,34 +14,101 @@ AlgorithmPractice/
 ├── Program.cs                          # Main entry point with test runners
 ├── *.csproj                           # C# project files
 ├── *.sln                              # Solution file
-├── [Solution Files]                   # Algorithm implementations
-├── [Test Files]                       # Comprehensive test cases
-└── [README Files]                     # Detailed documentation for each pattern
+│
+├── GraphProblems/                      # Graph and Tree-based algorithms
+│   ├── MeetingRooms_README.md
+│   ├── MeetingRoomsSolution.cs
+│   ├── MeetingRoomsTest.cs
+│   ├── CourseSchedule_README.md
+│   ├── CourseScheduleSolution.cs
+│   └── CourseScheduleTest.cs
+│
+├── TwoPointers/                        # Two Pointers and Fast/Slow Pointer patterns
+│   ├── TwoSum_README.md
+│   ├── TwoSumSolution.cs
+│   ├── TwoSumTest.cs
+│   ├── FastSlowPointer_README.md
+│   ├── FastSlowPointerSolution.cs
+│   └── FastSlowPointerTest.cs
+│
+├── MergeOperations/                     # Merge-based algorithms
+│   ├── MergeIntervals_README.md
+│   ├── MergeIntervalSolution.cs
+│   ├── MergeIntervalTest.cs
+│   ├── MergeKSortedLists_README.md
+│   ├── MergeKSortedListsSolution.cs
+│   └── MergeKSortedListsTest.cs
+│
+├── Sorting/                            # Sorting algorithms and patterns
+│   ├── MergeSort_README.md
+│   ├── MergeSortSolution.cs
+│   ├── MergeSortTest.cs
+│   ├── SortingPatterns_README.md
+│   ├── SortingPatternsSolution.cs
+│   └── SortingPatternsTest.cs
+│
+├── BinarySearch/                        # Binary Search and variants
+│   ├── BinarySearch_README.md
+│   ├── BinarySearchSolution.cs
+│   ├── BinarySearchTest.cs
+│   ├── TopKFrequent_README.md
+│   ├── TopKFrequentSolution.cs
+│   └── TopKFrequentTest.cs
+│
+├── SlidingWindow/                       # Sliding Window problems
+│   ├── SlidingWindow_README.md
+│   ├── SlidingWindowSolution.cs
+│   └── SlidingWindowTest.cs
+│
+├── PrefixSum/                           # Prefix Sum and range queries
+│   ├── PrefixSum_README.md
+│   ├── PrefixSumSolution.cs
+│   └── PrefixSumTest.cs
+│
+└── Greedy/                             # Greedy algorithms
+    ├── Greedy_README.md
+    ├── GreedySolution.cs
+    └── GreedyTest.cs
 ```
 
-## 🧮 Algorithm Patterns Covered
+## 🧮 Algorithm Patterns by Directory
 
-### 1. **Two Pointers & Sliding Window**
-- **Two Sum** - Find pairs that sum to target
-- **Sliding Window** - Maximum sum subarray, longest substring without repeats
-- **Fast & Slow Pointers** - Cycle detection, middle element finding
-
-### 2. **Sorting & Search**
-- **Binary Search** - Standard and variants (first/last occurrence, rotated array)
-- **Sorting Patterns** - Multiple sorting algorithms and sorting-based problems
-- **Top K Elements** - Heap-based solutions for frequent elements
-
-### 3. **Graph & Tree Problems**
-- **Course Schedule** - Topological sorting for course prerequisites
+### 📂 **GraphProblems/**
 - **Meeting Rooms** - Interval scheduling and room allocation
+- **Course Schedule** - Topological sorting for course prerequisites
 
-### 4. **Dynamic Programming & Greedy**
-- **Greedy Algorithms** - Activity selection, jump game, gas station
-- **Interval Problems** - Merge intervals, meeting room scheduling
+### 📂 **TwoPointers/**
+- **Two Sum** - Find pairs that sum to target
+- **Fast & Slow Pointers** - Cycle detection, middle element finding, happy numbers
 
-### 5. **Array & String Manipulation**
-- **Prefix Sum** - Range queries, subarray sum problems
-- **Merge Operations** - Merge K sorted lists, merge intervals
+### 📂 **MergeOperations/**
+- **Merge Intervals** - Overlapping interval merging
+- **Merge K Sorted Lists** - Multiple approaches for merging sorted linked lists
+
+### 📂 **Sorting/**
+- **Merge Sort** - Divide and conquer sorting algorithm
+- **Sorting Patterns** - Multiple sorting algorithms (Bubble, Selection, Insertion, Quick, Heap, Counting, Radix, Bucket) and sorting-based problems
+
+### 📂 **BinarySearch/**
+- **Binary Search** - Standard and variants (first/last occurrence, ceiling/floor, rotated array, 2D matrix search)
+- **Top K Frequent Elements** - Heap-based solutions for frequent elements
+
+### 📂 **SlidingWindow/**
+- **Fixed Size Window** - Maximum sum subarray of size K
+- **Variable Size Window** - Longest subarray with sum constraints
+- **String Problems** - Longest substring without repeats, minimum window substring, anagrams
+
+### 📂 **PrefixSum/**
+- **Range Queries** - Efficient range sum calculations
+- **Subarray Problems** - Subarray sum equals K, maximum subarray sum
+- **Multiple Subarrays** - Non-overlapping subarray combinations
+
+### 📂 **Greedy/**
+- **Activity Selection** - Optimal activity scheduling
+- **Jump Game** - Can reach end, minimum jumps
+- **Gas Station** - Circular tour problem
+- **Interval Problems** - Balloon bursting, non-overlapping intervals
+- **Other Greedy** - Task scheduler, coin change, fractional knapsack, Huffman coding
 
 ## 🛠️ Technologies Used
 
@@ -80,26 +147,25 @@ Each algorithm pattern includes:
 - **Time Complexity** - Big O notation analysis
 - **Test Cases** - Comprehensive test scenarios
 
-## 🎯 Problem Categories
+## 🎯 Problem Categories by Difficulty
 
 ### Easy Level
-- Two Sum
-- Binary Search (basic)
-- Bubble Sort
-- Simple Array Manipulation
+- **TwoPointers/TwoSum** - Basic hash map approach
+- **BinarySearch/BinarySearch** - Standard binary search
+- **Sorting/SortingPatterns** - Basic sorting algorithms
 
 ### Medium Level
-- Meeting Rooms
-- Merge Intervals
-- Top K Frequent Elements
-- Sliding Window Problems
-- Course Schedule
+- **GraphProblems/MeetingRooms** - Interval scheduling
+- **MergeOperations/MergeIntervals** - Interval merging
+- **BinarySearch/TopKFrequent** - Heap-based solutions
+- **SlidingWindow/** - Window-based problems
+- **GraphProblems/CourseSchedule** - Topological sorting
 
 ### Hard Level
-- Merge K Sorted Lists
-- Complex Greedy Problems
-- Advanced Binary Search Variants
-- Complex Sorting Patterns
+- **MergeOperations/MergeKSortedLists** - Multiple merge approaches
+- **Greedy/** - Complex greedy algorithms
+- **BinarySearch/** - Advanced binary search variants
+- **Sorting/SortingPatterns** - Complex sorting-based problems
 
 ## 📖 Documentation
 
@@ -123,11 +189,11 @@ This project is open source and available under the MIT License.
 
 ## 🎓 Learning Path
 
-1. Start with **Two Sum** and basic **Binary Search**
-2. Move to **Sorting Patterns** and **Sliding Window**
-3. Practice **Graph Problems** like **Course Schedule**
-4. Advance to **Greedy Algorithms** and **Dynamic Programming**
-5. Master **Complex Data Structures** like **Merge K Sorted Lists**
+1. Start with **TwoPointers/TwoSum** and **BinarySearch/BinarySearch**
+2. Move to **Sorting/SortingPatterns** and **SlidingWindow/**
+3. Practice **GraphProblems/** like **CourseSchedule**
+4. Advance to **Greedy/** algorithms
+5. Master **MergeOperations/MergeKSortedLists**
 
 ## 🔗 Related Resources
 
